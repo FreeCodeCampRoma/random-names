@@ -25,5 +25,12 @@ describe('Generate random names', function(){
       var randomName = nomiItaliani.random();
       expect(nomiItaliani.all).to.include(randomName);
     });
+    it('should return an array of random names if passed a number', function(){
+      var randomNames = nomiItaliani.random(3);
+      expect(randomNames).to.have.length(3);
+      randomNames.forEach(function(name){
+        expect(nomiItaliani.all).to.include(name);
+      })
+    })
   })
 });
