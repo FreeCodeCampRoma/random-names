@@ -3,7 +3,7 @@ import italianNames from './nomi-italiani.json';
 
 var getRandomNames = uniqueRandomArray(italianNames);
 // Esporto un oggetto - uso CommonJS per i moduli
-module.exports = {
+export default {
   all: italianNames,
   random: random
 };
