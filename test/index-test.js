@@ -1,5 +1,5 @@
-var expect = require('chai').expect;
-var nomiItaliani = require('../src/index');
+import {expect} from 'chai';
+import nomiItaliani from '../src/index';
 
 describe('Generate random names', function(){
   /*it('should work!', function(){
